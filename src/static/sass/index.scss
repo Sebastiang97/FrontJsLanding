@@ -1,7 +1,6 @@
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
+@import 'nav.scss';
+@import 'logo.scss';
+@import 'card.scss';
 
 * {
   margin: 0;
@@ -12,16 +11,11 @@
   position: fixed;
   z-index: -100;
   height: 100%;
+  background: linear-gradient(to bottom, #010101 0%, #c53a94 100%);
+}
 
-  // background: -moz-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
-  // background: -webkit-linear-gradient(top, #11e8bb 0%, #8200c9 100%);
-  // background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
-  background: linear-gradient(to bottom, #f2a034 0%, #c53a94 100%);
-  // filter: gradient(
-  //   startColorstr= '#F2A034',
-  //   endColorstr= '#C53A94',
-  //   GradientType=1
-  // );
+.img {
+  width: 250px;
 }
 
 .container {
@@ -31,43 +25,32 @@
   height: 100vh;
   width: 100%;
   z-index: 100;
+  margin-bottom: 450px;
 }
 
 .ticket {
-  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(0, 153, 255, 0.435);
+  border-radius: 17px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 600px;
-  aspect-ratio: 18/9;
-  border-radius: 6px;
-  display: grid;
-  place-content: center;
+  background: #00020437;
 }
 
 .ticket h1 {
-  color: aliceblue;
+  color: #fcfcfc;
+  font-weight: 900;
+  margin: 40px;
+  font-size: 40px;
+  text-align: center;
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
 }
 
 .wrapper {
   perspective: 1000px;
-}
-
-.bg {
-  top: 0;
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  filter: blur(20px);
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-svg {
-  position: fixed;
-  top: 0px;
-  right: 10px;
-  height: 100px;
-  width: 100px;
 }
 
 .space {
@@ -83,10 +66,22 @@ svg {
 }
 
 #blue {
-  background-color: #1e90fff0;
-  margin-top: 450px;
+  background-color: rgba(0, 2, 4, 0.216);
   width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000;
   transition: width 0.1s width;
+  .titutlo {
+    width: 100%;
+    padding: 10px 5px;
+    text-align: center;
+    color: #f9fcff;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+  }
 }
 
 .center {
@@ -102,23 +97,23 @@ svg {
   list-style-type: none;
   margin: 0;
 
+  .features {
+    margin: 100px auto;
+    color: #112a46;
+    list-style-type: none;
+    opacity: 0;
+  }
+
+  li span {
+    display: flex;
+    width: 300px;
+    font-size: 25px;
+    line-height: 1.1428571429;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+  }
+
   // margin: 300px 0;
-}
-
-.listFeatures .features {
-  margin: 100px auto;
-  color: #112a46;
-  list-style-type: none;
-  opacity: 0;
-}
-
-.listFeatures li span {
-  display: flex;
-  width: 300px;
-  font-size: 25px;
-  line-height: 1.1428571429;
-  font-weight: 600;
-  letter-spacing: 0.007em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
 }

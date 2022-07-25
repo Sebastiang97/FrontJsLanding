@@ -18,7 +18,6 @@ const intersection = (lights, Three) => {
   })
 
   const images = selectAll('.space')
-  console.log(images)
 
   for (let image of images) {
     lazyLoadingObserver.observe(image)

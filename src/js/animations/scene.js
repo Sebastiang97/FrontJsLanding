@@ -111,14 +111,10 @@ const init = (THREE) => {
   const render = () => {
     const elapsedTime = clock.getElapsedTime()
 
-    if (contador == window.scrollY) {
-      particles.rotation.x = elapsedTime * 0.08
-    } else {
-      particles.rotation.x = window.scrollY * elapsedTime * 0.0008
-      contador = window.scrollY
-    }
-    // particle.rotation.x += 0.0
-    // particle.rotation.y -= 0.004
+    particles.rotation.x = elapsedTime * 0.08
+
+    // particles.rotation.y += 0.0
+    // particles.rotation.x -= 0.004
 
     renderer.render(scene, camera)
     requestAnimationFrame(render)

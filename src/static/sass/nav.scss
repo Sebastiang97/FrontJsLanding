@@ -1,0 +1,128 @@
+nav {
+  position: fixed;
+  width: 90%;
+  z-index: 200;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.mobile,
+.home-container .center-home .info-container.mobile {
+  display: none;
+}
+
+.desktop {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+
+  a {
+    color: rgb(220, 222, 233);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    background-color: #eec3e549;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  a:hover {
+    background-color: #00020437;
+  }
+}
+
+nav .desktop .nav-item {
+  padding: 1rem;
+  position: relative;
+  font-size: clamp(1rem, 4vw - 2rem, 1.5rem);
+}
+
+nav .desktop .nav-item .nav-item:hover {
+  background-color: #383838;
+}
+
+nav .nav-item a {
+  color: #112a46;
+  text-decoration: none;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 2px;
+}
+
+nav .desktop .nav-item a:hover {
+  color: #fff;
+}
+
+nav .desktop .nav-item .nav-item:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .desktop .nav-item.active a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav .desktop,
+  .home-container .center-home .info-container.desktop {
+    display: none;
+  }
+
+  nav,
+  nav .mobile {
+    display: flex;
+    background-color: #112a46;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  nav .mobile .nav-item {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: #777;
+    font-size: clamp(1.5rem, 4vw - 2rem, 2rem);
+  }
+
+  nav .mobile .nav-item a {
+    text-decoration: none;
+    color: #777;
+  }
+
+  nav .mobile .nav-item.active a {
+    color: #fff;
+  }
+
+  nav .mobile .menu {
+    padding: 1rem;
+    position: relative;
+    color: #fff;
+    justify-content: flex-end;
+  }
+
+  nav .mobile .menu .material-icons {
+    font-size: clamp(2rem, 4vw - 2rem, 2rem);
+  }
+
+  #submenu {
+    margin-left: 20px;
+  }
+
+  #submenu,
+  #menu {
+    cursor: pointer;
+  }
+
+  nav .mobile .Collapse {
+    display: none;
+  }
+
+  nav .mobile .Collapse-submenu {
+    display: none;
+  }
+}

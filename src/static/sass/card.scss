@@ -1,0 +1,48 @@
+.articles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+article.card {
+  width: 300px;
+  display: block;
+  padding: 10px 15px;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+
+  .content {
+    width: 100%;
+    margin: 10px 0;
+
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      color: #f9fcff;
+      font-size: clamp(2rem, 4vw - 2rem, 3rem);
+    }
+
+    button {
+      cursor: pointer;
+      width: 100%;
+      padding: 15px 25px;
+      border: unset;
+      border-radius: 15px;
+      background: rgba(238, 195, 229, 0.286);
+      position: relative;
+      font-weight: 1000;
+      color: #212121;
+      font-size: clamp(1rem, 4vw - 2rem, 1.5rem);
+    }
+    button:hover {
+      background-color: rgba(0, 2, 4, 0.216);
+      color: #f9fcff;
+    }
+  }
+}

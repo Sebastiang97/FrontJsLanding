@@ -6,59 +6,174 @@
     <link rel="stylesheet" href="./main.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script defer src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
+    <nav>
+      <svg viewBox="0 0 160 160" width="200" height="200">
+        <defs>
+          <linearGradient id="my1" gradientTransform="rotate(90)">
+            <stop offset="5%" stop-color="#83B8D9" />
+            <stop offset="100%" stop-color="purple" />
+          </linearGradient>
+        </defs>
+
+        <circle cx="80" cy="80" r="50" fill="url('#my1')" />
+        <g transform=" matrix(1, 1, 0.25, 0.433, 80, 80)">
+          <path
+            d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
+            fill="#FFF"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="360 0 0"
+              to="0 0 0"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </path>
+        </g>
+        <path
+          fill="url('#my2')"
+          d="M 50,0 A 50,50 0 0,0 -50,0Z"
+          transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)"
+        />
+      </svg>
+      <!-- Escritorio -->
+      <div class="desktop">
+        <a href="#ejemplo">Toda la Colección</a>
+        <button id="switchLenguage" class="es">ES</button>
+      </div>
+      <!-- Mobile -->
+      <div class="mobile">
+        <div class="nav-item menu" id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="Collapse" id="menu-collapse">
+          <div class="nav-item active"><a href="">Home</a></div>
+          <div class="nav-item"><a href=""> Noticias</a></div>
+        </div>
+      </div>
+    </nav>
+
     <div id="scene"></div>
     <div class="container">
       <div class="wrapper">
         <div class="ticket">
-          <h1>Funko Guardians of Galaxy</h1>
+          <h1>Funko Batman</h1>
+          <img src="./assets/img/batman.png" class="img" alt="" />
+          <span class="content">
+            <h2 id="mainTitle">Funko Batman</h2>
+            <ul id="featuresMainArticle">
+              <li>Theme Super heroes, Movies</li>
+              <li>Brand POP</li>
+              <li>Color Multicolor</li>
+              <li>Style The Batman</li>
+              <li>Material Vinyl</li>
+            </ul>
+          </span>
+          <button type="button">
+            <a
+              href="https://www.amazon.com/Funko-Pop-Movies-Batman/dp/B097YNSVRC/ref=sr_1_2?crid=9JK3ZNWUJ7KA&keywords=funko+batman&qid=1658699025&sprefix=funko+batman%2Caps%2C148&sr=8-2"
+              target="_blank"
+              >Cómprame</a
+            >
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- <svg viewBox="0 0 160 160" width="160" height="160">
-      <defs>
-        <linearGradient id="my1" gradientTransform="rotate(90)">
-          <stop offset="5%" stop-color="gold" />
-          <stop offset="100%" stop-color="red" />
-        </linearGradient>
-      </defs>
-
-      <circle cx="80" cy="80" r="50" fill="url('#my1')" />
-      <g transform=" matrix(1, 1, 0.25, 0.433, 80, 80)">
-        <path
-          d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z"
-          fill="#FFF"
-        >
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            from="360 0 0"
-            to="0 0 0"
-            dur="3s"
-            repeatCount="indefinite"
-          />
-        </path>
-      </g>
-      <path
-        fill="url('#my2')"
-        d="M 50,0 A 50,50 0 0,0 -50,0Z"
-        transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)"
-      />
-    </svg> -->
-
-    <div class="center">
-      <div
+    <div class="center" id="ejemplo">
+      <section
         id="blue"
         class="space blue"
-        data-colorone="#0772B4"
+        data-colorone="#83B8D9"
         data-colortwo="#d90429"
       >
-        <h1>Amplia tu colleccion de figuras</h1>
-      </div>
+        <div class="titutlo">
+          <h1 id="tileSection">¡Amplia tu colección!</h1>
+        </div>
+        <div class="articles">
+          <article class="card">
+            <div class="content">
+              <img src="./assets/img/child.png" class="img" alt="" />
+            </div>
+            <div class="content">
+              <h2 id="secondArticle">Funko The Child</h2>
+              <ul id="featuresSecondArticle">
+                <li>Theme Movies</li>
+                <li>Brand POP</li>
+                <li>Color Multicolor</li>
+                <li>Style Funko</li>
+                <li>Material Vinyl</li>
+              </ul>
+            </div>
+            <div class="content">
+              <button type="button">
+                <a
+                  href="https://www.amazon.com/Funko-Pop-Star-Wars-Mandalorian/dp/B08WBXVYC3"
+                  target="_blank"
+                  >Cómprame</a
+                >
+              </button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="content">
+              <img src="./assets/img/deadpool.png" class="img" alt="" />
+            </div>
+            <span class="content">
+              <h2>Funko Deadpool</h2>
+              <ul id="featuresthirdArticle">
+                <li>Theme Movies</li>
+                <li>Brand POP</li>
+                <li>Color Multicolor</li>
+                <li>Style Funko</li>
+                <li>Material Vinyl</li>
+              </ul>
+            </span>
+            <span class="content">
+              <button type="button">
+                <a
+                  href="https://www.amazon.com/Funko-Pop-Marvel-Collectible-Multicolor/dp/B079TJBCWR"
+                  target="_blank"
+                  >Cómprame</a
+                >
+              </button>
+            </span>
+          </article>
+          <article class="card">
+            <div class="content">
+              <img src="./assets/img/flahs.png" class="img" alt="" />
+            </div>
+            <span class="content">
+              <h2>Funko The Flash</h2>
+              <ul id="featuresfourthArticle">
+                <li>Theme Movies</li>
+                <li>Brand POP</li>
+                <li>Color Multicolor</li>
+                <li>Style Funko</li>
+                <li>Material Vinyl</li>
+              </ul>
+            </span>
+            <span class="content">
+              <button type="button">
+                <a
+                  href="https://www.amazon.com/Funko-POP-TV-Action-Figure/dp/B00TP016G8/ref=sr_1_20?crid=3PDOD8JWM53KB&keywords=funko+the+flash&qid=1658698842&sprefix=funko+the+flas%2Caps%2C155&sr=8-20"
+                  target="_blank"
+                  >Cómprame</a
+                >
+              </button>
+            </span>
+          </article>
+        </div>
+      </section>
     </div>
-    <div class="space green" ddata-colorone="#aefb2a" data-colortwo="#57ebde">
+    <!-- <div class="space green" ddata-colorone="#aefb2a" data-colortwo="#57ebde">
       <ul class="listFeatures">
         <li class="features">
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
@@ -76,11 +191,6 @@
           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit</span>
         </li>
       </ul>
-    </div>
-    <div
-      class="space blue"
-      data-colorone="#03E5B7"
-      data-colortwo="#037ADE"
-    ></div>
+    </div> -->
   </body>
 </html>

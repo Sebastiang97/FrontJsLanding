@@ -1,9 +1,7 @@
+import { select, selectAll } from '../helpers/selectors'
 const rotation = () => {
-  const $ = (selector) => document.querySelector(selector)
-
-  const wrapper = $('.wrapper')
-  const container = $('.container')
-  const ticket = $('.ticket')
+  const container = select('.container')
+  const ticket = select('.ticket')
 
   const { width, height } = container.getBoundingClientRect()
 
