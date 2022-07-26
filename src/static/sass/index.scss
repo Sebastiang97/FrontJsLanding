@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
 #scene {
   position: fixed;
   z-index: -100;
@@ -65,9 +73,11 @@
   height: 100%;
 }
 
-#blue {
+.section2 {
   background-color: rgba(0, 2, 4, 0.216);
+  border-radius: 25px;
   width: 700px;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,6 +86,7 @@
   transition: width 0.1s width;
   .titutlo {
     width: 100%;
+    margin: 20px 0;
     padding: 10px 5px;
     text-align: center;
     color: #f9fcff;

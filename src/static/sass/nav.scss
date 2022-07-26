@@ -28,9 +28,16 @@ nav {
     background-color: #eec3e549;
     border-radius: 30px;
     padding: 10px;
+    margin: 0 10px;
+    border: none;
   }
   a:hover {
     background-color: #00020437;
+  }
+
+  button {
+    @extend a;
+    cursor: pointer;
   }
 }
 
