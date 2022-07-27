@@ -1,3 +1,6 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
 nav {
   position: fixed;
   width: 90%;
@@ -19,20 +22,19 @@ nav {
   margin: 30px;
 
   a {
-    color: rgb(220, 222, 233);
+    color: $colorTextSecondary;
     text-decoration: none;
     font-size: 25px;
     font-weight: 900;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
-    background-color: #eec3e549;
+    font-family: $fonts;
+    background-color: $bgItemNav;
     border-radius: 30px;
     padding: 10px;
     margin: 0 10px;
     border: none;
   }
   a:hover {
-    background-color: #00020437;
+    background-color: $bgContainer;
   }
 
   button {
@@ -44,11 +46,11 @@ nav {
 nav .desktop .nav-item {
   padding: 1rem;
   position: relative;
-  font-size: clamp(1rem, 4vw - 2rem, 1.5rem);
+  font-size: $fSize1Rem;
 }
 
 nav .desktop .nav-item .nav-item:hover {
-  background-color: #383838;
+  background-color: $bgItemNavHover;
 }
 
 nav .nav-item a {

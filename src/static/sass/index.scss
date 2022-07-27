@@ -1,6 +1,8 @@
 @import 'nav.scss';
 @import 'logo.scss';
 @import 'card.scss';
+@import 'colors.scss';
+@import 'fonts.scss';
 
 * {
   margin: 0;
@@ -19,7 +21,7 @@ a {
   position: fixed;
   z-index: -100;
   height: 100%;
-  background: linear-gradient(to bottom, #010101 0%, #c53a94 100%);
+  background: $bgGradient;
 }
 
 .img {
@@ -37,24 +39,23 @@ a {
 }
 
 .ticket {
-  border-radius: 17px;
+  border-radius: $borderBox;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 600px;
-  background: #00020437;
+  background: $bgContainer;
 }
 
 .ticket h1 {
-  color: #fcfcfc;
+  color: $colorText;
   font-weight: 900;
   margin: 40px;
   font-size: 40px;
   text-align: center;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font-family: $fonts;
 }
 
 .wrapper {
@@ -66,7 +67,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
 }
 
 .green {
@@ -74,7 +74,7 @@ a {
 }
 
 .section2 {
-  background-color: rgba(0, 2, 4, 0.216);
+  background-color: $bgContainer;
   border-radius: 25px;
   width: 700px;
   height: 100vh;
@@ -82,16 +82,14 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #000;
   transition: width 0.1s width;
   .titutlo {
     width: 100%;
     margin: 20px 0;
     padding: 10px 5px;
     text-align: center;
-    color: #f9fcff;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    color: $colorText;
+    font-family: $fonts;
   }
 }
 
@@ -100,9 +98,6 @@ a {
   display: flex;
   justify-content: center;
 }
-.yellow {
-  background-color: yellow;
-}
 
 .listFeatures {
   list-style-type: none;
@@ -110,7 +105,7 @@ a {
 
   .features {
     margin: 100px auto;
-    color: #112a46;
+    color: $secondaryText;
     list-style-type: none;
     opacity: 0;
   }
@@ -122,9 +117,6 @@ a {
     line-height: 1.1428571429;
     font-weight: 600;
     letter-spacing: 0.007em;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: $fonts;
   }
-
-  // margin: 300px 0;
 }
